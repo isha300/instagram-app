@@ -1,9 +1,14 @@
 package com.codepath.simpleinsta;
 
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
+
 import com.parse.ParseClassName;
 import com.parse.ParseFile;
 import com.parse.ParseObject;
 import com.parse.ParseUser;
+
+import java.io.IOException;
 
 @ParseClassName("Post")
 public class Post extends ParseObject {
