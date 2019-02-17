@@ -49,6 +49,8 @@ public class LoginActivity extends AppCompatActivity {
                 user.setUsername(etUsername.getText().toString());
                 user.setPassword(etPassword.getText().toString());
                 signIn();
+                etUsername.setText("");
+                etPassword.setText("");
             }
         });
     }
@@ -59,7 +61,8 @@ public class LoginActivity extends AppCompatActivity {
                 if (e == null) {
                     // Hooray! Let them use the app now.
                 } else {
-                    // Sign up didn't succeed. Look at the ParseException to figure out what went wrong
+                    // Sign up didn't succeed. Look at the ParseException
+                    // to figure out what went wrong
                 }
             }
         });
